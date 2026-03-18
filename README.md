@@ -2,7 +2,7 @@
 
 Deep Agents LangChain is a professionally structured Python project for building research and planning workflows with LangChain. It provides a reusable application foundation for turning user prompts into structured, section-based outputs through validated inputs, modular orchestration, and separate execution interfaces for CLI and web usage.
 
-The codebase is designed to be maintainable, extensible, and production-friendly. It emphasizes clean boundaries between application layers, predictable data models, and a workflow that can run both with a live LLM and in a deterministic fallback mode when API credentials are not available.
+This repository is intended to provide a professional baseline for hands-on practice with LangChain deep-agent patterns, including validated inputs, modular service design, orchestration layers, prompt-driven workflows, and multiple execution interfaces. It is structured so developers can study the core building blocks, run the project locally, and extend it into more advanced agent systems such as tool-enabled workflows, retrieval pipelines, and multi-step research assistants.
 
 ## Key Highlights
 
