@@ -151,6 +151,32 @@ streamlit run app.py
 pytest
 ```
 
+## Testing
+
+The repository includes focused automated tests for the most important application boundaries and shared workflow behavior. The current test suite validates:
+
+- CLI output rendering and JSON output handling
+- settings alias resolution and project root discovery
+- request schema normalization and validation failures
+- fallback research generation behavior
+- internal plan parsing behavior and section limiting logic
+
+### Test Files
+
+- `tests/test_cli.py` verifies markdown rendering and the CLI JSON output path
+- `tests/test_config_and_schemas.py` verifies configuration alias handling, request normalization, and validation rules
+- `tests/test_research_service.py` verifies fallback execution, section limits, and plan parsing behavior
+
+### Latest Verified Outcome
+
+The most recent local verification run completed successfully with:
+
+```bash
+10 passed
+```
+
+This result reflects the current baseline coverage for the CLI layer, schema validation, configuration handling, and service-layer workflow logic.
+
 ## Example Use Cases
 
 This project can serve as a foundation for:
@@ -177,7 +203,7 @@ The current implementation is intentionally structured as a strong base for futu
 - The codebase is organized for readability and long-term maintainability
 - Business logic is isolated from interface code
 - Validation is enforced at the boundary of the system
-- The project includes a testable service layer and a minimal automated test
+- The project includes automated coverage for the CLI, schema, configuration, and service layers
 - The repository is suitable as a starter template for more advanced agent applications
 
 ## Notes
