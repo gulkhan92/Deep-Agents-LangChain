@@ -11,7 +11,7 @@ class ResearchRequest(BaseModel):
     query: str = Field(..., min_length=5, max_length=500)
     context: str | None = Field(default=None, max_length=2000)
     audience: str = Field(default="general", min_length=3, max_length=100)
-    output_format: Literal["markdown", "text"] = "markdown"
+    output_format: Literal["markdown", "text", "json"] = "markdown"
     max_sections: int = Field(default=4, ge=1, le=8)
 
     @field_validator("query")
